@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F964D8DD257AF4EC00FE176C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964D8DC257AF4EC00FE176C /* AppDelegate.swift */; };
+		F964D8DF257AF4EC00FE176C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964D8DE257AF4EC00FE176C /* SceneDelegate.swift */; };
+		F964D8E1257AF4EC00FE176C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964D8E0257AF4EC00FE176C /* ViewController.swift */; };
+		F964D8E4257AF4EC00FE176C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F964D8E2257AF4EC00FE176C /* Main.storyboard */; };
+		F964D8E6257AF4F100FE176C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F964D8E5257AF4F100FE176C /* Assets.xcassets */; };
+		F964D8E9257AF4F100FE176C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F964D8E7257AF4F100FE176C /* LaunchScreen.storyboard */; };
+		F964D8F4257AF4F200FE176C /* Stadium_StackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964D8F3257AF4F200FE176C /* Stadium_StackerTests.swift */; };
+		F964D8FF257AF4F200FE176C /* Stadium_StackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964D8FE257AF4F200FE176C /* Stadium_StackerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F964D8F0257AF4F200FE176C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F964D8D1257AF4EC00FE176C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F964D8D8257AF4EC00FE176C;
+			remoteInfo = "Stadium Stacker";
+		};
+		F964D8FB257AF4F200FE176C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F964D8D1257AF4EC00FE176C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F964D8D8257AF4EC00FE176C;
+			remoteInfo = "Stadium Stacker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F964D8D9257AF4EC00FE176C /* Stadium Stacker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stadium Stacker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F964D8DC257AF4EC00FE176C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F964D8DE257AF4EC00FE176C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F964D8E0257AF4EC00FE176C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F964D8E3257AF4EC00FE176C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F964D8E5257AF4F100FE176C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F964D8E8257AF4F100FE176C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F964D8EA257AF4F100FE176C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F964D8EF257AF4F200FE176C /* Stadium StackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stadium StackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F964D8F3257AF4F200FE176C /* Stadium_StackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stadium_StackerTests.swift; sourceTree = "<group>"; };
+		F964D8F5257AF4F200FE176C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F964D8FA257AF4F200FE176C /* Stadium StackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stadium StackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F964D8FE257AF4F200FE176C /* Stadium_StackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stadium_StackerUITests.swift; sourceTree = "<group>"; };
+		F964D900257AF4F200FE176C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F964D8D6257AF4EC00FE176C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F964D8EC257AF4F200FE176C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F964D8F7257AF4F200FE176C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F964D8D0257AF4EC00FE176C = {
+			isa = PBXGroup;
+			children = (
+				F964D8DB257AF4EC00FE176C /* Stadium Stacker */,
+				F964D8F2257AF4F200FE176C /* Stadium StackerTests */,
+				F964D8FD257AF4F200FE176C /* Stadium StackerUITests */,
+				F964D8DA257AF4EC00FE176C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F964D8DA257AF4EC00FE176C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F964D8D9257AF4EC00FE176C /* Stadium Stacker.app */,
+				F964D8EF257AF4F200FE176C /* Stadium StackerTests.xctest */,
+				F964D8FA257AF4F200FE176C /* Stadium StackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F964D8DB257AF4EC00FE176C /* Stadium Stacker */ = {
+			isa = PBXGroup;
+			children = (
+				F964D8DC257AF4EC00FE176C /* AppDelegate.swift */,
+				F964D8DE257AF4EC00FE176C /* SceneDelegate.swift */,
+				F964D8E0257AF4EC00FE176C /* ViewController.swift */,
+				F964D8E2257AF4EC00FE176C /* Main.storyboard */,
+				F964D8E5257AF4F100FE176C /* Assets.xcassets */,
+				F964D8E7257AF4F100FE176C /* LaunchScreen.storyboard */,
+				F964D8EA257AF4F100FE176C /* Info.plist */,
+			);
+			path = "Stadium Stacker";
+			sourceTree = "<group>";
+		};
+		F964D8F2257AF4F200FE176C /* Stadium StackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F964D8F3257AF4F200FE176C /* Stadium_StackerTests.swift */,
+				F964D8F5257AF4F200FE176C /* Info.plist */,
+			);
+			path = "Stadium StackerTests";
+			sourceTree = "<group>";
+		};
+		F964D8FD257AF4F200FE176C /* Stadium StackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F964D8FE257AF4F200FE176C /* Stadium_StackerUITests.swift */,
+				F964D900257AF4F200FE176C /* Info.plist */,
+			);
+			path = "Stadium StackerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F964D8D8257AF4EC00FE176C /* Stadium Stacker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F964D903257AF4F200FE176C /* Build configuration list for PBXNativeTarget "Stadium Stacker" */;
+			buildPhases = (
+				F964D8D5257AF4EC00FE176C /* Sources */,
+				F964D8D6257AF4EC00FE176C /* Frameworks */,
+				F964D8D7257AF4EC00FE176C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Stadium Stacker";
+			productName = "Stadium Stacker";
+			productReference = F964D8D9257AF4EC00FE176C /* Stadium Stacker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F964D8EE257AF4F200FE176C /* Stadium StackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F964D906257AF4F200FE176C /* Build configuration list for PBXNativeTarget "Stadium StackerTests" */;
+			buildPhases = (
+				F964D8EB257AF4F200FE176C /* Sources */,
+				F964D8EC257AF4F200FE176C /* Frameworks */,
+				F964D8ED257AF4F200FE176C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F964D8F1257AF4F200FE176C /* PBXTargetDependency */,
+			);
+			name = "Stadium StackerTests";
+			productName = "Stadium StackerTests";
+			productReference = F964D8EF257AF4F200FE176C /* Stadium StackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F964D8F9257AF4F200FE176C /* Stadium StackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F964D909257AF4F200FE176C /* Build configuration list for PBXNativeTarget "Stadium StackerUITests" */;
+			buildPhases = (
+				F964D8F6257AF4F200FE176C /* Sources */,
+				F964D8F7257AF4F200FE176C /* Frameworks */,
+				F964D8F8257AF4F200FE176C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F964D8FC257AF4F200FE176C /* PBXTargetDependency */,
+			);
+			name = "Stadium StackerUITests";
+			productName = "Stadium StackerUITests";
+			productReference = F964D8FA257AF4F200FE176C /* Stadium StackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F964D8D1257AF4EC00FE176C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					F964D8D8257AF4EC00FE176C = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					F964D8EE257AF4F200FE176C = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = F964D8D8257AF4EC00FE176C;
+					};
+					F964D8F9257AF4F200FE176C = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = F964D8D8257AF4EC00FE176C;
+					};
+				};
+			};
+			buildConfigurationList = F964D8D4257AF4EC00FE176C /* Build configuration list for PBXProject "Stadium Stacker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F964D8D0257AF4EC00FE176C;
+			productRefGroup = F964D8DA257AF4EC00FE176C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F964D8D8257AF4EC00FE176C /* Stadium Stacker */,
+				F964D8EE257AF4F200FE176C /* Stadium StackerTests */,
+				F964D8F9257AF4F200FE176C /* Stadium StackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F964D8D7257AF4EC00FE176C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F964D8E9257AF4F100FE176C /* LaunchScreen.storyboard in Resources */,
+				F964D8E6257AF4F100FE176C /* Assets.xcassets in Resources */,
+				F964D8E4257AF4EC00FE176C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F964D8ED257AF4F200FE176C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F964D8F8257AF4F200FE176C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F964D8D5257AF4EC00FE176C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F964D8E1257AF4EC00FE176C /* ViewController.swift in Sources */,
+				F964D8DD257AF4EC00FE176C /* AppDelegate.swift in Sources */,
+				F964D8DF257AF4EC00FE176C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F964D8EB257AF4F200FE176C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F964D8F4257AF4F200FE176C /* Stadium_StackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F964D8F6257AF4F200FE176C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F964D8FF257AF4F200FE176C /* Stadium_StackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F964D8F1257AF4F200FE176C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F964D8D8257AF4EC00FE176C /* Stadium Stacker */;
+			targetProxy = F964D8F0257AF4F200FE176C /* PBXContainerItemProxy */;
+		};
+		F964D8FC257AF4F200FE176C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F964D8D8257AF4EC00FE176C /* Stadium Stacker */;
+			targetProxy = F964D8FB257AF4F200FE176C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F964D8E2257AF4EC00FE176C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F964D8E3257AF4EC00FE176C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F964D8E7257AF4F100FE176C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F964D8E8257AF4F100FE176C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F964D901257AF4F200FE176C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F964D902257AF4F200FE176C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F964D904257AF4F200FE176C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WP46NL24DB;
+				INFOPLIST_FILE = "Stadium Stacker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.golden.Stadium-Stacker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F964D905257AF4F200FE176C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WP46NL24DB;
+				INFOPLIST_FILE = "Stadium Stacker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.golden.Stadium-Stacker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F964D907257AF4F200FE176C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WP46NL24DB;
+				INFOPLIST_FILE = "Stadium StackerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.golden.Stadium-StackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stadium Stacker.app/Stadium Stacker";
+			};
+			name = Debug;
+		};
+		F964D908257AF4F200FE176C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WP46NL24DB;
+				INFOPLIST_FILE = "Stadium StackerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.golden.Stadium-StackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stadium Stacker.app/Stadium Stacker";
+			};
+			name = Release;
+		};
+		F964D90A257AF4F200FE176C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WP46NL24DB;
+				INFOPLIST_FILE = "Stadium StackerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.golden.Stadium-StackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Stadium Stacker";
+			};
+			name = Debug;
+		};
+		F964D90B257AF4F200FE176C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WP46NL24DB;
+				INFOPLIST_FILE = "Stadium StackerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.golden.Stadium-StackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Stadium Stacker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F964D8D4257AF4EC00FE176C /* Build configuration list for PBXProject "Stadium Stacker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F964D901257AF4F200FE176C /* Debug */,
+				F964D902257AF4F200FE176C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F964D903257AF4F200FE176C /* Build configuration list for PBXNativeTarget "Stadium Stacker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F964D904257AF4F200FE176C /* Debug */,
+				F964D905257AF4F200FE176C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F964D906257AF4F200FE176C /* Build configuration list for PBXNativeTarget "Stadium StackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F964D907257AF4F200FE176C /* Debug */,
+				F964D908257AF4F200FE176C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F964D909257AF4F200FE176C /* Build configuration list for PBXNativeTarget "Stadium StackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F964D90A257AF4F200FE176C /* Debug */,
+				F964D90B257AF4F200FE176C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F964D8D1257AF4EC00FE176C /* Project object */;
+}
