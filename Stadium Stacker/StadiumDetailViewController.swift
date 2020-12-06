@@ -1,0 +1,20 @@
+//
+//  StadiumDetailViewController.swift
+//  Stadium Stacker
+//
+//  Created by Alex Golden on 12/4/20.
+//
+
+import UIKit
+
+class StadiumDetailViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+    
+
+
+}

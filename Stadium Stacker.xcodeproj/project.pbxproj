@@ -15,6 +15,8 @@
 		F964D8E9257AF4F100FE176C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F964D8E7257AF4F100FE176C /* LaunchScreen.storyboard */; };
 		F964D8F4257AF4F200FE176C /* Stadium_StackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964D8F3257AF4F200FE176C /* Stadium_StackerTests.swift */; };
 		F964D8FF257AF4F200FE176C /* Stadium_StackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964D8FE257AF4F200FE176C /* Stadium_StackerUITests.swift */; };
+		F964D910257AF5A500FE176C /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964D90F257AF5A500FE176C /* LogInViewController.swift */; };
+		F964D915257B017900FE176C /* StadiumDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964D914257B017900FE176C /* StadiumDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		F964D8FA257AF4F200FE176C /* Stadium StackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stadium StackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F964D8FE257AF4F200FE176C /* Stadium_StackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stadium_StackerUITests.swift; sourceTree = "<group>"; };
 		F964D900257AF4F200FE176C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F964D90F257AF5A500FE176C /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		F964D914257B017900FE176C /* StadiumDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StadiumDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +105,9 @@
 			children = (
 				F964D8DC257AF4EC00FE176C /* AppDelegate.swift */,
 				F964D8DE257AF4EC00FE176C /* SceneDelegate.swift */,
+				F964D90F257AF5A500FE176C /* LogInViewController.swift */,
 				F964D8E0257AF4EC00FE176C /* ViewController.swift */,
+				F964D914257B017900FE176C /* StadiumDetailViewController.swift */,
 				F964D8E2257AF4EC00FE176C /* Main.storyboard */,
 				F964D8E5257AF4F100FE176C /* Assets.xcassets */,
 				F964D8E7257AF4F100FE176C /* LaunchScreen.storyboard */,
@@ -258,8 +264,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F964D910257AF5A500FE176C /* LogInViewController.swift in Sources */,
 				F964D8E1257AF4EC00FE176C /* ViewController.swift in Sources */,
 				F964D8DD257AF4EC00FE176C /* AppDelegate.swift in Sources */,
+				F964D915257B017900FE176C /* StadiumDetailViewController.swift in Sources */,
 				F964D8DF257AF4EC00FE176C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
