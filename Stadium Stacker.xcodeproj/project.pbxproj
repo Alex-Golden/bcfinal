@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F9296649257C8921000BE14E /* FactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9296648257C8921000BE14E /* FactsViewController.swift */; };
 		F964D8DD257AF4EC00FE176C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964D8DC257AF4EC00FE176C /* AppDelegate.swift */; };
 		F964D8DF257AF4EC00FE176C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964D8DE257AF4EC00FE176C /* SceneDelegate.swift */; };
 		F964D8E1257AF4EC00FE176C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964D8E0257AF4EC00FE176C /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F9296648257C8921000BE14E /* FactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsViewController.swift; sourceTree = "<group>"; };
 		F964D8D9257AF4EC00FE176C /* Stadium Stacker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stadium Stacker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F964D8DC257AF4EC00FE176C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F964D8DE257AF4EC00FE176C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				F964D90F257AF5A500FE176C /* LogInViewController.swift */,
 				F964D8E0257AF4EC00FE176C /* ViewController.swift */,
 				F964D914257B017900FE176C /* StadiumDetailViewController.swift */,
+				F9296648257C8921000BE14E /* FactsViewController.swift */,
 				F964D8E2257AF4EC00FE176C /* Main.storyboard */,
 				F964D8E5257AF4F100FE176C /* Assets.xcassets */,
 				F964D8E7257AF4F100FE176C /* LaunchScreen.storyboard */,
@@ -266,6 +269,7 @@
 			files = (
 				F964D910257AF5A500FE176C /* LogInViewController.swift in Sources */,
 				F964D8E1257AF4EC00FE176C /* ViewController.swift in Sources */,
+				F9296649257C8921000BE14E /* FactsViewController.swift in Sources */,
 				F964D8DD257AF4EC00FE176C /* AppDelegate.swift in Sources */,
 				F964D915257B017900FE176C /* StadiumDetailViewController.swift in Sources */,
 				F964D8DF257AF4EC00FE176C /* SceneDelegate.swift in Sources */,

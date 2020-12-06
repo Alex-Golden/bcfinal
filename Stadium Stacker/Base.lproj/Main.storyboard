@@ -84,6 +84,10 @@
                                 <state key="normal" title="Stadium Fun Fact">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="factButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fOU-LM-MqH"/>
+                                    <segue destination="WP6-gg-Pbp" kind="presentation" identifier="ShowFact" id="Slf-SO-5AE"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See how you're stadium stacks up!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzG-XK-8D1">
                                 <rect key="frame" x="16" y="62" width="343" height="135"/>
@@ -154,10 +158,93 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Stadium Stacker" id="tZf-ua-pFG"/>
+                    <connections>
+                        <outlet property="factButton" destination="cvC-Uh-fGR" id="fKj-4Y-2aw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1912.8" y="93.103448275862078"/>
+        </scene>
+        <!--Facts View Controller-->
+        <scene sceneID="NR0-BO-N0O">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="nVq-zb-vuc" customClass="FactsViewController" customModule="Stadium_Stacker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R2L-Az-3JM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stadium Fun Fact" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jdu-xM-DJH">
+                                <rect key="frame" x="16" y="44" width="343" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Etp-XG-p6S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="46"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you know..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pww-YL-bPw">
+                                <rect key="frame" x="16" y="149" width="343" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="rfm-OT-kkj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The largest stadium is Alumni stadium and its also the best and go eags and sucks to bu and i hope this works" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0b-ls-nZi">
+                                <rect key="frame" x="16" y="232" width="343" height="259"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="259" id="Hgt-x4-zwX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLA-Y8-7uT">
+                                <rect key="frame" x="16" y="499" width="343" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="mf0-d4-q2I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
+                                <state key="normal" title="Random Fact"/>
+                                <connections>
+                                    <action selector="randomButton:" destination="nVq-zb-vuc" eventType="touchUpInside" id="rws-Ub-oFx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nna-UZ-5c8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nna-UZ-5c8" firstAttribute="bottom" secondItem="T0b-ls-nZi" secondAttribute="bottom" constant="176" id="AZ5-rd-7PO"/>
+                            <constraint firstItem="nna-UZ-5c8" firstAttribute="trailing" secondItem="FLA-Y8-7uT" secondAttribute="trailing" constant="16" id="JNK-pS-G7n"/>
+                            <constraint firstItem="nna-UZ-5c8" firstAttribute="bottom" secondItem="FLA-Y8-7uT" secondAttribute="bottom" constant="123" id="NVI-14-Pmw"/>
+                            <constraint firstItem="Jdu-xM-DJH" firstAttribute="top" secondItem="nna-UZ-5c8" secondAttribute="top" id="TuA-nr-mLc"/>
+                            <constraint firstItem="FLA-Y8-7uT" firstAttribute="leading" secondItem="nna-UZ-5c8" secondAttribute="leading" constant="16" id="VoP-RI-ygQ"/>
+                            <constraint firstItem="T0b-ls-nZi" firstAttribute="leading" secondItem="nna-UZ-5c8" secondAttribute="leading" constant="16" id="XeJ-qH-g4a"/>
+                            <constraint firstItem="nna-UZ-5c8" firstAttribute="trailing" secondItem="Jdu-xM-DJH" secondAttribute="trailing" constant="16" id="dGA-0x-dyB"/>
+                            <constraint firstItem="nna-UZ-5c8" firstAttribute="trailing" secondItem="T0b-ls-nZi" secondAttribute="trailing" constant="16" id="hUb-qU-4a2"/>
+                            <constraint firstItem="nna-UZ-5c8" firstAttribute="trailing" secondItem="pww-YL-bPw" secondAttribute="trailing" constant="16" id="hYa-nt-cob"/>
+                            <constraint firstItem="Jdu-xM-DJH" firstAttribute="leading" secondItem="nna-UZ-5c8" secondAttribute="leading" constant="16" id="l9z-za-I9n"/>
+                            <constraint firstItem="pww-YL-bPw" firstAttribute="top" secondItem="Jdu-xM-DJH" secondAttribute="bottom" constant="5" id="pVe-bg-rxB"/>
+                            <constraint firstItem="pww-YL-bPw" firstAttribute="leading" secondItem="nna-UZ-5c8" secondAttribute="leading" constant="16" id="u4e-qi-CtT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="fvV-kk-mTA">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Zzz-Ff-Cxf"/>
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="zwV-WC-OOR">
+                            <connections>
+                                <action selector="backButtonPressed:" destination="nVq-zb-vuc" id="mQO-8W-eEK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="factLabel" destination="T0b-ls-nZi" id="Abm-Sh-vJv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hEh-Mu-EfB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3812" y="375.56221889055473"/>
         </scene>
         <!--Stadium Detail View Controller-->
         <scene sceneID="Hhp-dL-SL5">
@@ -170,6 +257,16 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rpd-mV-A82">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="HUT-w8-5a7">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HUT-w8-5a7" id="yKE-k3-HJ4">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="w2R-dr-qko"/>
@@ -184,7 +281,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rid-BW-bAG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2845.5999999999999" y="111.99400299850076"/>
+            <point key="canvasLocation" x="3073" y="-538"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="99n-Bc-1RY">
@@ -222,6 +319,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7CP-fS-itm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-778.39999999999998" y="92.203898050974516"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wE9-NF-dfJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="WP6-gg-Pbp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yLJ-sD-eVH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nVq-zb-vuc" kind="relationship" relationship="rootViewController" id="tlg-aY-Qfc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="96h-cN-KQP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2930" y="678"/>
         </scene>
     </scenes>
     <resources>

@@ -8,12 +8,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var factButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    
     }
-
+    @IBAction func factButtonPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "ShowFact", sender: nil)
+    }
+    
 
 }
 
