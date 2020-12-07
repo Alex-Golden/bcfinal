@@ -11,7 +11,7 @@ struct StadiumInfo: Codable {
     var name: String
     var city: String
     var state: String
-    var capacity: Int
-    var year_constructed: Int
-    var grass: Bool
+//    var capacity: Int
+   // var year_constructed: Int
+   // var grass: Bool
 }

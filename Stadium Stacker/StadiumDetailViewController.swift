@@ -21,10 +21,12 @@ class StadiumDetailViewController: UIViewController {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
-            
         }
     }
     
+    @IBAction func backButtonPressed(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
 }
 extension StadiumDetailViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

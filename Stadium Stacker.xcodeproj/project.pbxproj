@@ -20,6 +20,7 @@
 		F964D8FF257AF4F200FE176C /* Stadium_StackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964D8FE257AF4F200FE176C /* Stadium_StackerUITests.swift */; };
 		F964D910257AF5A500FE176C /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964D90F257AF5A500FE176C /* LogInViewController.swift */; };
 		F964D915257B017900FE176C /* StadiumDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964D914257B017900FE176C /* StadiumDetailViewController.swift */; };
+		F96C01E2257DCBBF002C6B32 /* StadiumInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96C01E1257DCBBF002C6B32 /* StadiumInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		F964D900257AF4F200FE176C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F964D90F257AF5A500FE176C /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		F964D914257B017900FE176C /* StadiumDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StadiumDetailViewController.swift; sourceTree = "<group>"; };
+		F96C01E1257DCBBF002C6B32 /* StadiumInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StadiumInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				F964D90F257AF5A500FE176C /* LogInViewController.swift */,
 				F964D8E0257AF4EC00FE176C /* ViewController.swift */,
 				F964D914257B017900FE176C /* StadiumDetailViewController.swift */,
+				F96C01E1257DCBBF002C6B32 /* StadiumInfoViewController.swift */,
 				F9296648257C8921000BE14E /* FactsViewController.swift */,
 				F964D8E2257AF4EC00FE176C /* Main.storyboard */,
 				F964D8E5257AF4F100FE176C /* Assets.xcassets */,
@@ -274,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F964D910257AF5A500FE176C /* LogInViewController.swift in Sources */,
+				F96C01E2257DCBBF002C6B32 /* StadiumInfoViewController.swift in Sources */,
 				F964D8E1257AF4EC00FE176C /* ViewController.swift in Sources */,
 				F9296658257D43F7000BE14E /* StaduimInfo.swift in Sources */,
 				F929665D257D471D000BE14E /* Stadiums.swift in Sources */,

@@ -74,6 +74,10 @@
                                 <state key="normal" title="Stadium List View">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="listButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N5S-g7-Jmk"/>
+                                    <segue destination="4RH-pu-EiS" kind="presentation" identifier="ShowList" id="4rR-oB-J1D"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvC-Uh-fGR">
                                 <rect key="frame" x="16" y="353" width="343" height="59"/>
@@ -160,6 +164,7 @@
                     <navigationItem key="navigationItem" title="Stadium Stacker" id="tZf-ua-pFG"/>
                     <connections>
                         <outlet property="factButton" destination="cvC-Uh-fGR" id="fKj-4Y-2aw"/>
+                        <outlet property="listButton" destination="O3o-CP-woe" id="BUI-af-CWY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -232,7 +237,7 @@
                     </view>
                     <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="fvV-kk-mTA">
                         <barButtonItem key="backBarButtonItem" title="Back" id="Zzz-Ff-Cxf"/>
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="zwV-WC-OOR">
+                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="zwV-WC-OOR">
                             <connections>
                                 <action selector="backButtonPressed:" destination="nVq-zb-vuc" id="mQO-8W-eEK"/>
                             </connections>
@@ -249,7 +254,7 @@
         <!--Stadium Detail View Controller-->
         <scene sceneID="Hhp-dL-SL5">
             <objects>
-                <viewController id="h9H-l6-vuP" customClass="StadiumDetailViewController" customModule="Stadium_Stacker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="h9H-l6-vuP" customClass="StadiumDetailViewController" customModule="Stadium_Stacker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7m3-vF-bcO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -287,14 +292,45 @@
                             <constraint firstItem="Rpd-mV-A82" firstAttribute="leading" secondItem="w2R-dr-qko" secondAttribute="leading" id="fIu-UD-782"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="EYS-Pg-T8m"/>
+                    <navigationItem key="navigationItem" id="EYS-Pg-T8m">
+                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="nr5-SE-6Vn">
+                            <connections>
+                                <action selector="backButtonPressed:" destination="h9H-l6-vuP" id="ecq-wr-Tgo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="Rpd-mV-A82" id="avK-l6-RL2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rid-BW-bAG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3369" y="-635"/>
+            <point key="canvasLocation" x="4308" y="-635.53223388305855"/>
+        </scene>
+        <!--Stadium Info View Controller-->
+        <scene sceneID="hxj-ha-a2n">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="OHv-Vw-s3j" customClass="StadiumInfoViewController" customModule="Stadium_Stacker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Djs-Ha-ZKa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRl-nE-Dg3">
+                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="94F-lz-w8E"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Obg-Tt-M7Y"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r7n-69-n1Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6671.1999999999998" y="-631.0344827586207"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="99n-Bc-1RY">
@@ -352,22 +388,41 @@
             <point key="canvasLocation" x="2462" y="967"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="rOE-Zc-SKb">
+        <scene sceneID="qxe-MX-XUd">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DfX-r4-QRw" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="4RH-pu-EiS" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1nI-0I-zl1">
+                    <navigationItem key="navigationItem" id="eQg-oi-TBF"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YRO-vg-YCv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="h9H-l6-vuP" kind="relationship" relationship="rootViewController" id="WtO-po-yJl"/>
+                        <segue destination="h9H-l6-vuP" kind="relationship" relationship="rootViewController" id="msC-9f-bKs"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BeJ-vX-QTl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mIP-9C-fd6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2497" y="-634"/>
+            <point key="canvasLocation" x="3368.8000000000002" y="-635.53223388305855"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rp2-7C-NNN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OrR-bB-Bca" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="c34-SB-10X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OHv-Vw-s3j" kind="relationship" relationship="rootViewController" id="XxZ-su-5CK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2gn-TH-XvV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5732" y="-631.0344827586207"/>
         </scene>
     </scenes>
     <resources>

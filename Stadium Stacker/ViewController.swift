@@ -9,10 +9,14 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var factButton: UIButton!
+    @IBOutlet weak var listButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+
+    }
+    @IBAction func listButtonPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "ShowList", sender: nil)
     }
     @IBAction func factButtonPressed(_ sender: UIButton) {
         performSegue(withIdentifier: "ShowFact", sender: nil)
