@@ -17,6 +17,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
     }
+    @IBAction func goButtonPressed(_ sender: UIButton) {  performSegue(withIdentifier: "ShowSearch", sender: nil)
+    }
     @IBAction func listButtonPressed(_ sender: UIButton) {
         performSegue(withIdentifier: "ShowList", sender: nil)
     }
