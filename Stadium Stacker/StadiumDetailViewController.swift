@@ -43,6 +43,7 @@ extension StadiumDetailViewController: UITableViewDelegate, UITableViewDataSourc
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.textLabel?.text = "\(indexPath.row + 1). \(stadiums.stadiumArray[indexPath.row].name)"
+        cell.detailTextLabel?.text = "\(stadiums.stadiumArray[indexPath.row].capacity)"
         return cell
     }
 

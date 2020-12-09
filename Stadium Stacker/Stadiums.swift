@@ -30,7 +30,7 @@ class Stadiums {
             // deal with the data
             do {
                 self.stadiumArray = try JSONDecoder().decode([StadiumInfo].self, from: data!)
-                print("\(self.stadiumArray)")
+        //        print("\(self.stadiumArray)")
             } catch {
                 print(error)
                 print("😡 JSON ERROR: \(error.localizedDescription)")

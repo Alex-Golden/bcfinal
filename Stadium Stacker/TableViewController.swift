@@ -24,12 +24,15 @@ class TableViewController: UITableViewController, UISearchBarDelegate {
                 self.tableView.reloadData()
             }
         }
-        for indexPath in 0..<stadiums.stadiumArray.count {
-            data.append(stadiums.stadiumArray[indexPath].name)
-        }
-        
-        filteredData = data
-        //print(filteredData)
+        passData()
+    }
+    func passData() {
+    for indexPath in 0..<stadiums.stadiumArray.count {
+        data.append(stadiums.stadiumArray[indexPath].name)
+    }
+
+   // filteredData = data
+    //print(filteredData)
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -38,25 +41,41 @@ class TableViewController: UITableViewController, UISearchBarDelegate {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return stadiums.stadiumArray.count
+    // print(filteredData.count)
+       passData()
+        return data.count
     }
+    
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+      passData()
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")! as UITableViewCell
         cell.textLabel?.text = data[indexPath.row]
+        cell.detailTextLabel?.text = "\(stadiums.stadiumArray[indexPath.row].capacity)"
+    //    print(indexPath.count)
         return cell
     }
+   
+    
     @IBAction func backButtonPressed(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowInfo2" {
+            let destination = segue.destination as! StadiumInfoViewController
+            let selectedIndexPath = tableView.indexPathForSelectedRow!
+            destination.stadiumInfo = stadiums.stadiumArray[selectedIndexPath.row]
+        }
+    }
+    
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-      //  filteredData = []
+       filteredData = []
         if searchText == "" {
-            
+            passData()
             filteredData = data
         } else {
-        
+        passData()
         for stuff in data {
             if stuff.lowercased().contains(searchText.lowercased()) {
                 
@@ -66,6 +85,4 @@ class TableViewController: UITableViewController, UISearchBarDelegate {
         }
         self.tableView.reloadData()
     }
-    
-    
 }
