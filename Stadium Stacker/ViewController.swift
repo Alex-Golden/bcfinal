@@ -10,6 +10,8 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var factButton: UIButton!
     @IBOutlet weak var listButton: UIButton!
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var goButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +24,6 @@ class ViewController: UIViewController {
         performSegue(withIdentifier: "ShowFact", sender: nil)
     }
     
-
+    
 }
 

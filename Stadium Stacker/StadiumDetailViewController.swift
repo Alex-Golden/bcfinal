@@ -23,6 +23,13 @@ class StadiumDetailViewController: UIViewController {
             }
         }
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowInfo" {
+            let destination = segue.destination as! StadiumInfoViewController
+            let selectedIndexPath = tableView.indexPathForSelectedRow!
+            destination.stadiumInfo = stadiums.stadiumArray[selectedIndexPath.row]
+        }
+    }
     
     @IBAction func backButtonPressed(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
