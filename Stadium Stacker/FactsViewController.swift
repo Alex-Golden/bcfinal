@@ -10,7 +10,7 @@ import UIKit
 class FactsViewController: UIViewController {
     @IBOutlet weak var factLabel: UILabel!
     
-    var factArray: [String] = ["Go Eags", "Suck2BU", "Go Navy", "Beat Army"]
+    var factArray: [String] = ["Go Eags", "Sucks2BU", "Go Navy", "Beat Army"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

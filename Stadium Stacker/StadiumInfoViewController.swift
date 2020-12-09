@@ -19,8 +19,9 @@ class StadiumInfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if stadiumInfo == nil {
-            stadiumInfo = StadiumInfo(name: "", city: "", state: "", capacity: 0)
-            //add cap & year 
+     //       stadiumInfo = StadiumInfo(name: "", city: "", state: "", capacity: 0)
+            stadiumInfo = StadiumInfo(name: "", city: "", state: "", capacity: 0, year_constructed: 0)
+     
         }
         
        updateUserInterface()
@@ -32,7 +33,10 @@ class StadiumInfoViewController: UIViewController {
        cityLabel.text = "\(stadiumInfo.city)"
        stateLabel.text = "\(stadiumInfo.state)"
          capacityLabel.text = "\(stadiumInfo.capacity)"
-//        if stadiumInfo.year_constructed == nil {
+        let year_constructed = stadiumInfo.year_constructed ?? 0
+        let yearString = year_constructed == 0 ? "--" : "\(year_constructed)"
+        builtLabel.text = yearString
+//        if stadiumInfo.year_constructed != Int {
 //            builtLabel.text = "no year available"
 //        } else {
 //            builtLabel.text = "\(String(describing: stadiumInfo.year_constructed))"
