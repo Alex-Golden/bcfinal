@@ -19,7 +19,7 @@ class StadiumInfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if stadiumInfo == nil {
-            stadiumInfo = StadiumInfo(name: "Alumni Stadium", city: "Boston", state: "MA")
+            stadiumInfo = StadiumInfo(name: "", city: "", state: "", capacity: 0)
             //add cap & year 
         }
         
@@ -28,11 +28,15 @@ class StadiumInfoViewController: UIViewController {
     
     func updateUserInterface() {
         print("user interface updated")
-       // nameLabel.text = "\(StadiumInfo.name)"
-      //  cityLabel.text = "\(StadiumInfo.city)"
-     //   stateLabel.text = "\(StadiumInfo.state)"
-        // capacityLabel.text = "\(StadiumInfo.capacity)"
-        // builtLabel.text = "\(StadiumInfo.year_constructed)"
+        nameLabel.text = "\(stadiumInfo.name)"
+       cityLabel.text = "\(stadiumInfo.city)"
+       stateLabel.text = "\(stadiumInfo.state)"
+         capacityLabel.text = "\(stadiumInfo.capacity)"
+//        if stadiumInfo.year_constructed == nil {
+//            builtLabel.text = "no year available"
+//        } else {
+//            builtLabel.text = "\(String(describing: stadiumInfo.year_constructed))"
+//        }
     }
     
     
