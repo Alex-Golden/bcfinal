@@ -15,7 +15,9 @@ class FactsViewController: UIViewController {
     
     var factArray: [String] = ["Alumni Stadium at Boston College is objectively the best stadium",
                                "Michigan Stadium, also known as \"The Big House\", is the largest stadium in the United States",
-                               "Aloha Stadium = west "
+                               "Baseball stadiums such as Yankee Stadium, Tropicana Field, and Fenway Park have all hosted college football games",
+                               "Aloha Stadium is the most Western Stadium in the United States and is the only major stadium in Hawaii",
+                               "There are 7 stadiums named \"Memorial Stadium\" hosting notable teams such as Clemson, Indiana, and Nebraska"
                                ]
     
     override func viewDidLoad() {
