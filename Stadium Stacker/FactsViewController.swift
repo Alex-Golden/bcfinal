@@ -9,13 +9,19 @@ import UIKit
 
 class FactsViewController: UIViewController {
     @IBOutlet weak var factLabel: UILabel!
+    @IBOutlet weak var addButton: UIButton!
+    @IBOutlet weak var factTextField: UITextField!
+
     
-    var factArray: [String] = ["Go Eags", "Sucks2BU", "Go Navy", "Beat Army"]
+    var factArray: [String] = ["Alumni Stadium at Boston College is objectively the best stadium",
+                               "Michigan Stadium, also known as \"The Big House\", is the largest stadium in the United States",
+                               "Aloha Stadium = west "
+                               ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         getRandomFact()
-        
+
     }
     
     func getRandomFact() {
@@ -26,6 +32,7 @@ class FactsViewController: UIViewController {
         }
         factLabel.text = randomFact
     }
+
     
     @IBAction func randomButton(_ sender: UIButton) {
      getRandomFact()
@@ -35,5 +42,11 @@ class FactsViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func addButtonPressed(_ sender: UIButton) {
+       factArray.append(factTextField.text!)
+       factLabel.text = "\(factTextField.text!)"
+        factTextField.text = ""
+
+    }
     
 }

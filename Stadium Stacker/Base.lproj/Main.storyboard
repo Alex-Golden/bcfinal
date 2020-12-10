@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qRe-tQ-8AU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o2e-NW-Nwg">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,10 +18,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stadium Stacker" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Pmo-eh-xUH">
-                                <rect key="frame" x="16" y="44" width="343" height="603"/>
+                                <rect key="frame" x="16" y="0.0" width="343" height="647"/>
+                                <color key="backgroundColor" name="goldColor"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="92"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="navyColor"/>
                                 <nil key="highlightedColor"/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="1k8-jo-DgP" appends="YES" id="Gv4-JD-z8w"/>
@@ -28,7 +30,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="S41-lK-pl7"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="goldColor"/>
                         <constraints>
                             <constraint firstItem="Pmo-eh-xUH" firstAttribute="top" secondItem="S41-lK-pl7" secondAttribute="top" id="6Sc-4x-7dm"/>
                             <constraint firstItem="S41-lK-pl7" firstAttribute="trailing" secondItem="Pmo-eh-xUH" secondAttribute="trailing" constant="16" id="Gct-ZT-Oxb"/>
@@ -56,96 +58,78 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Stadium_Stacker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1121" translatesAutoresizingMaskIntoConstraints="NO" id="4Np-Et-7fk">
-                                <rect key="frame" x="0.0" y="420" width="375" height="247"/>
+                                <rect key="frame" x="0.0" y="400" width="375" height="247"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="247" id="08Z-bX-2sO"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3o-CP-woe">
-                                <rect key="frame" x="16" y="286" width="343" height="59"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="59" id="8NZ-gD-rLt"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="34"/>
-                                <state key="normal" title="Stadium List View">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="listButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N5S-g7-Jmk"/>
-                                    <segue destination="6mx-00-sb3" kind="show" identifier="ShowList" id="9Yl-b9-uyI"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvC-Uh-fGR">
-                                <rect key="frame" x="16" y="353" width="343" height="59"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="59" id="Qjt-ft-OqW"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="34"/>
-                                <state key="normal" title="Stadium Fun Fact">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="factButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fOU-LM-MqH"/>
-                                    <segue destination="WP6-gg-Pbp" kind="presentation" identifier="ShowFact" id="Slf-SO-5AE"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See how you're stadium stacks up!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzG-XK-8D1">
-                                <rect key="frame" x="16" y="62" width="343" height="135"/>
+                                <rect key="frame" x="16" y="74" width="343" height="135"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="135" id="4mL-uq-s75"/>
                                     <constraint firstAttribute="height" constant="135" id="acD-Id-cR0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="40"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="goldColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACZ-Wk-YT1">
-                                <rect key="frame" x="40" y="213" width="295" height="67"/>
+                                <rect key="frame" x="40" y="225" width="295" height="67"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="67" id="RLS-xm-50e"/>
+                                    <constraint firstAttribute="height" constant="67" id="PZC-CT-34D"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="34"/>
-                                <state key="normal" title="Searchable List">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="41"/>
+                                <state key="normal" title="Stadium List">
+                                    <color key="titleColor" name="goldColor"/>
                                 </state>
                                 <connections>
                                     <action selector="goButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gP2-Oy-zrM"/>
                                     <segue destination="owi-t2-ASe" kind="presentation" identifier="ShowSearch" id="Vea-cz-EW8"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvC-Uh-fGR">
+                                <rect key="frame" x="16" y="308" width="343" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="aQZ-09-eSd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="41"/>
+                                <state key="normal" title="Stadium Fun Fact">
+                                    <color key="titleColor" name="goldColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="factButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fOU-LM-MqH"/>
+                                    <segue destination="WP6-gg-Pbp" kind="presentation" identifier="ShowFact" id="Slf-SO-5AE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="navyColor"/>
                         <constraints>
-                            <constraint firstItem="O3o-CP-woe" firstAttribute="top" secondItem="ACZ-Wk-YT1" secondAttribute="bottom" constant="6" id="8d1-YO-cco"/>
-                            <constraint firstItem="cvC-Uh-fGR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Agp-qX-sC1"/>
-                            <constraint firstItem="O3o-CP-woe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="BWe-of-ajq"/>
                             <constraint firstItem="nzG-XK-8D1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="F8b-Ua-46O"/>
                             <constraint firstItem="4Np-Et-7fk" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="JAY-qC-hFM"/>
+                            <constraint firstItem="ACZ-Wk-YT1" firstAttribute="top" secondItem="nzG-XK-8D1" secondAttribute="bottom" constant="16" id="JJm-FC-fFt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nzG-XK-8D1" secondAttribute="trailing" constant="16" id="OKx-ks-2S9"/>
                             <constraint firstItem="4Np-Et-7fk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="QSC-23-nmC"/>
                             <constraint firstItem="nzG-XK-8D1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="Qj9-2H-CNo"/>
-                            <constraint firstItem="4Np-Et-7fk" firstAttribute="top" secondItem="cvC-Uh-fGR" secondAttribute="bottom" constant="8" symbolic="YES" id="RJE-Rw-jK4"/>
-                            <constraint firstItem="cvC-Uh-fGR" firstAttribute="top" secondItem="O3o-CP-woe" secondAttribute="bottom" constant="8" symbolic="YES" id="UIa-yx-42G"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O3o-CP-woe" secondAttribute="trailing" constant="16" id="Ve6-Yv-fei"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ACZ-Wk-YT1" secondAttribute="trailing" constant="40" id="RZL-P3-H85"/>
                             <constraint firstItem="4Np-Et-7fk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZA2-gN-59a"/>
                             <constraint firstItem="nzG-XK-8D1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="adf-fB-CIK"/>
+                            <constraint firstItem="ACZ-Wk-YT1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="b8U-ca-gAi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cvC-Uh-fGR" secondAttribute="trailing" constant="16" id="jTS-DK-OOe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nzG-XK-8D1" secondAttribute="trailing" constant="16" id="lmI-Cm-075"/>
+                            <constraint firstItem="cvC-Uh-fGR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="oG3-B7-UWK"/>
                             <constraint firstItem="nzG-XK-8D1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="psI-tl-QUe"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cvC-Uh-fGR" secondAttribute="trailing" constant="16" id="qyB-ul-MQp"/>
-                            <constraint firstItem="ACZ-Wk-YT1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="uFT-oj-V2H"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ACZ-Wk-YT1" secondAttribute="trailing" constant="40" id="vvb-63-nkm"/>
+                            <constraint firstItem="cvC-Uh-fGR" firstAttribute="top" secondItem="ACZ-Wk-YT1" secondAttribute="bottom" constant="16" id="tXW-pY-Bd2"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Stadium Stacker" id="tZf-ua-pFG"/>
                     <connections>
                         <outlet property="factButton" destination="cvC-Uh-fGR" id="fKj-4Y-2aw"/>
                         <outlet property="goButton" destination="ACZ-Wk-YT1" id="N0u-y8-EXs"/>
-                        <outlet property="listButton" destination="O3o-CP-woe" id="BUI-af-CWY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -173,7 +157,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fWA-rg-L2w">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" id="fWA-rg-L2w">
                                             <rect key="frame" x="16" y="12" width="33" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -229,7 +213,7 @@
                                     <constraint firstAttribute="height" constant="100" id="Etp-XG-p6S"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="46"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="goldColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you know..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pww-YL-bPw">
@@ -238,7 +222,7 @@
                                     <constraint firstAttribute="height" constant="44" id="rfm-OT-kkj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="32"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="goldColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The largest stadium is Alumni stadium and its also the best and go eags and sucks to bu and i hope this works" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0b-ls-nZi">
@@ -246,8 +230,8 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="259" id="Hgt-x4-zwX"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="24"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
+                                <color key="textColor" name="goldColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLA-Y8-7uT">
@@ -256,21 +240,53 @@
                                     <constraint firstAttribute="height" constant="45" id="mf0-d4-q2I"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
-                                <state key="normal" title="Random Fact"/>
+                                <state key="normal" title="Random Fact">
+                                    <color key="titleColor" name="goldColor"/>
+                                </state>
                                 <connections>
                                     <action selector="randomButton:" destination="nVq-zb-vuc" eventType="touchUpInside" id="rws-Ub-oFx"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b2E-Gh-trN">
+                                <rect key="frame" x="16" y="552" width="343" height="43"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="659-rY-h7B"/>
+                                </constraints>
+                                <color key="textColor" name="goldColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZt-wi-0VN">
+                                <rect key="frame" x="16" y="594" width="343" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Xyg-KJ-b27"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
+                                <state key="normal" title="Add Fact">
+                                    <color key="titleColor" name="goldColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="addButtonPressed:" destination="nVq-zb-vuc" eventType="touchUpInside" id="3ZN-61-hw1"/>
+                                    <action selector="randomButton:" destination="nVq-zb-vuc" eventType="touchUpInside" id="uUM-TS-ji2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nna-UZ-5c8"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="navyColor"/>
                         <constraints>
+                            <constraint firstItem="hZt-wi-0VN" firstAttribute="leading" secondItem="nna-UZ-5c8" secondAttribute="leading" constant="16" id="0zK-cG-4Wk"/>
+                            <constraint firstItem="nna-UZ-5c8" firstAttribute="bottom" secondItem="hZt-wi-0VN" secondAttribute="bottom" constant="28" id="1C0-du-u6o"/>
                             <constraint firstItem="nna-UZ-5c8" firstAttribute="bottom" secondItem="T0b-ls-nZi" secondAttribute="bottom" constant="176" id="AZ5-rd-7PO"/>
                             <constraint firstItem="nna-UZ-5c8" firstAttribute="trailing" secondItem="FLA-Y8-7uT" secondAttribute="trailing" constant="16" id="JNK-pS-G7n"/>
                             <constraint firstItem="nna-UZ-5c8" firstAttribute="bottom" secondItem="FLA-Y8-7uT" secondAttribute="bottom" constant="123" id="NVI-14-Pmw"/>
+                            <constraint firstItem="b2E-Gh-trN" firstAttribute="leading" secondItem="nna-UZ-5c8" secondAttribute="leading" constant="16" id="O1w-WV-6RA"/>
+                            <constraint firstItem="nna-UZ-5c8" firstAttribute="trailing" secondItem="b2E-Gh-trN" secondAttribute="trailing" constant="16" id="P6L-h1-tHU"/>
+                            <constraint firstItem="nna-UZ-5c8" firstAttribute="bottom" secondItem="b2E-Gh-trN" secondAttribute="bottom" constant="72" id="S0c-ss-A0j"/>
                             <constraint firstItem="Jdu-xM-DJH" firstAttribute="top" secondItem="nna-UZ-5c8" secondAttribute="top" id="TuA-nr-mLc"/>
                             <constraint firstItem="FLA-Y8-7uT" firstAttribute="leading" secondItem="nna-UZ-5c8" secondAttribute="leading" constant="16" id="VoP-RI-ygQ"/>
                             <constraint firstItem="T0b-ls-nZi" firstAttribute="leading" secondItem="nna-UZ-5c8" secondAttribute="leading" constant="16" id="XeJ-qH-g4a"/>
+                            <constraint firstItem="nna-UZ-5c8" firstAttribute="trailing" secondItem="hZt-wi-0VN" secondAttribute="trailing" constant="16" id="aKh-Sz-56t"/>
                             <constraint firstItem="nna-UZ-5c8" firstAttribute="trailing" secondItem="Jdu-xM-DJH" secondAttribute="trailing" constant="16" id="dGA-0x-dyB"/>
                             <constraint firstItem="nna-UZ-5c8" firstAttribute="trailing" secondItem="T0b-ls-nZi" secondAttribute="trailing" constant="16" id="hUb-qU-4a2"/>
                             <constraint firstItem="nna-UZ-5c8" firstAttribute="trailing" secondItem="pww-YL-bPw" secondAttribute="trailing" constant="16" id="hYa-nt-cob"/>
@@ -288,12 +304,14 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="addButton" destination="hZt-wi-0VN" id="H0V-xx-pst"/>
                         <outlet property="factLabel" destination="T0b-ls-nZi" id="Abm-Sh-vJv"/>
+                        <outlet property="factTextField" destination="b2E-Gh-trN" id="bcF-fP-prA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hEh-Mu-EfB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2782" y="994"/>
+            <point key="canvasLocation" x="2781.5999999999999" y="993.55322338830592"/>
         </scene>
         <!--Stadium Detail View Controller-->
         <scene sceneID="Hhp-dL-SL5">
@@ -330,9 +348,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="OHv-Vw-s3j" kind="show" identifier="ShowInfo" id="rBe-hn-Wpp"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -359,7 +374,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rid-BW-bAG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4688.8000000000002" y="-628.33583208395805"/>
+            <point key="canvasLocation" x="3798" y="-466"/>
         </scene>
         <!--Stadium Info View Controller-->
         <scene sceneID="hxj-ha-a2n">
@@ -375,7 +390,7 @@
                                     <constraint firstAttribute="height" constant="184" id="B1S-H9-pNi"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="40"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="goldColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rs3-kK-DVp">
@@ -385,7 +400,7 @@
                                     <constraint firstAttribute="width" constant="97" id="i5y-G4-WjT"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="28"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="goldColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capacity:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hA-3X-ilv">
@@ -395,7 +410,7 @@
                                     <constraint firstAttribute="height" constant="28" id="P8A-3K-xNu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="28"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="goldColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year Built:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0Z-Dz-UyZ">
@@ -405,7 +420,7 @@
                                     <constraint firstAttribute="height" constant="28" id="oPl-FX-0zc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="28"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="goldColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTm-j9-Ssl">
@@ -415,7 +430,7 @@
                                     <constraint firstAttribute="height" constant="28" id="xqx-E6-WtH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="28"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="goldColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City Name Here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKf-dY-Tjh">
@@ -425,7 +440,7 @@
                                     <constraint firstAttribute="width" constant="343" id="Kcj-2Q-sLG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="28"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="goldColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State Here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLa-Dm-Gts">
@@ -435,7 +450,7 @@
                                     <constraint firstAttribute="width" constant="343" id="PmK-R3-4j6"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="28"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="goldColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capacity Here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYA-qP-1b2">
@@ -445,7 +460,7 @@
                                     <constraint firstAttribute="height" constant="28" id="Ebp-Uy-IDn"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="28"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="goldColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year Built Here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYm-Px-jmN">
@@ -455,12 +470,12 @@
                                     <constraint firstAttribute="height" constant="28" id="Pr2-23-67X"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="28"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="goldColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="94F-lz-w8E"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="navyColor"/>
                         <constraints>
                             <constraint firstItem="JYA-qP-1b2" firstAttribute="leading" secondItem="94F-lz-w8E" secondAttribute="leading" constant="16" id="505-Hb-YE4"/>
                             <constraint firstItem="uLa-Dm-Gts" firstAttribute="leading" secondItem="94F-lz-w8E" secondAttribute="leading" constant="16" id="6jW-DY-NgS"/>
@@ -494,7 +509,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r7n-69-n1Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5844" y="-275.71214392803603"/>
+            <point key="canvasLocation" x="5044" y="-54"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="99n-Bc-1RY">
@@ -514,24 +529,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zYm-GQ-Ikm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="973.60000000000002" y="93.103448275862078"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="o6z-IM-7QS">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qRe-tQ-8AU" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BOE-G7-5Y1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="o2e-NW-Nwg" kind="relationship" relationship="rootViewController" id="f1w-F4-W3a"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7CP-fS-itm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-778.39999999999998" y="92.203898050974516"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wE9-NF-dfJ">
@@ -586,14 +583,17 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eDr-KF-dKg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3749.5999999999999" y="-628.33583208395805"/>
+            <point key="canvasLocation" x="2934" y="-465"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="jye-DZ-hjJ"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="image1121" width="1800" height="1200"/>
+        <namedColor name="goldColor">
+            <color red="0.75526863339999994" green="0.71202105280000005" blue="0.58821403979999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="navyColor">
+            <color red="0.1063602045" green="0.19351866840000001" blue="0.3960996866" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
