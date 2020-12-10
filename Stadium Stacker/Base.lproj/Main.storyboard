@@ -217,50 +217,27 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you know..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pww-YL-bPw">
-                                <rect key="frame" x="16" y="149" width="343" height="44"/>
+                                <rect key="frame" x="16" y="336" width="343" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="rfm-OT-kkj"/>
+                                    <constraint firstAttribute="height" constant="44" id="9XK-aG-Wpr"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="32"/>
                                 <color key="textColor" name="goldColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The largest stadium is Alumni stadium and its also the best and go eags and sucks to bu and i hope this works" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0b-ls-nZi">
-                                <rect key="frame" x="16" y="232" width="343" height="259"/>
+                                <rect key="frame" x="16" y="388" width="343" height="259"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="259" id="Hgt-x4-zwX"/>
+                                    <constraint firstAttribute="height" constant="259" id="kl5-g6-LGk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
                                 <color key="textColor" name="goldColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLA-Y8-7uT">
-                                <rect key="frame" x="16" y="499" width="343" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="mf0-d4-q2I"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
-                                <state key="normal" title="Random Fact">
-                                    <color key="titleColor" name="goldColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="randomButton:" destination="nVq-zb-vuc" eventType="touchUpInside" id="rws-Ub-oFx"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b2E-Gh-trN">
-                                <rect key="frame" x="16" y="552" width="343" height="43"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="43" id="659-rY-h7B"/>
-                                </constraints>
-                                <color key="textColor" name="goldColor"/>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZt-wi-0VN">
-                                <rect key="frame" x="16" y="594" width="343" height="45"/>
+                                <rect key="frame" x="16" y="159" width="343" height="45"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="Xyg-KJ-b27"/>
+                                    <constraint firstAttribute="height" constant="45" id="ePB-rS-B7L"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
                                 <state key="normal" title="Add Fact">
@@ -271,28 +248,51 @@
                                     <action selector="randomButton:" destination="nVq-zb-vuc" eventType="touchUpInside" id="uUM-TS-ji2"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b2E-Gh-trN">
+                                <rect key="frame" x="16" y="212" width="343" height="43"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="vPo-mc-Z2E"/>
+                                </constraints>
+                                <color key="textColor" name="goldColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLA-Y8-7uT">
+                                <rect key="frame" x="16" y="263" width="343" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="FB3-TO-E7o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
+                                <state key="normal" title="Random Fact">
+                                    <color key="titleColor" name="goldColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="randomButton:" destination="nVq-zb-vuc" eventType="touchUpInside" id="rws-Ub-oFx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nna-UZ-5c8"/>
                         <color key="backgroundColor" name="navyColor"/>
                         <constraints>
-                            <constraint firstItem="hZt-wi-0VN" firstAttribute="leading" secondItem="nna-UZ-5c8" secondAttribute="leading" constant="16" id="0zK-cG-4Wk"/>
-                            <constraint firstItem="nna-UZ-5c8" firstAttribute="bottom" secondItem="hZt-wi-0VN" secondAttribute="bottom" constant="28" id="1C0-du-u6o"/>
-                            <constraint firstItem="nna-UZ-5c8" firstAttribute="bottom" secondItem="T0b-ls-nZi" secondAttribute="bottom" constant="176" id="AZ5-rd-7PO"/>
-                            <constraint firstItem="nna-UZ-5c8" firstAttribute="trailing" secondItem="FLA-Y8-7uT" secondAttribute="trailing" constant="16" id="JNK-pS-G7n"/>
-                            <constraint firstItem="nna-UZ-5c8" firstAttribute="bottom" secondItem="FLA-Y8-7uT" secondAttribute="bottom" constant="123" id="NVI-14-Pmw"/>
-                            <constraint firstItem="b2E-Gh-trN" firstAttribute="leading" secondItem="nna-UZ-5c8" secondAttribute="leading" constant="16" id="O1w-WV-6RA"/>
-                            <constraint firstItem="nna-UZ-5c8" firstAttribute="trailing" secondItem="b2E-Gh-trN" secondAttribute="trailing" constant="16" id="P6L-h1-tHU"/>
-                            <constraint firstItem="nna-UZ-5c8" firstAttribute="bottom" secondItem="b2E-Gh-trN" secondAttribute="bottom" constant="72" id="S0c-ss-A0j"/>
+                            <constraint firstItem="b2E-Gh-trN" firstAttribute="top" secondItem="hZt-wi-0VN" secondAttribute="bottom" constant="8" id="1gh-qu-xMg"/>
+                            <constraint firstItem="hZt-wi-0VN" firstAttribute="leading" secondItem="nna-UZ-5c8" secondAttribute="leading" constant="16" id="3YS-lo-YoS"/>
+                            <constraint firstItem="nna-UZ-5c8" firstAttribute="trailing" secondItem="pww-YL-bPw" secondAttribute="trailing" constant="16" id="6Pa-VA-Lfo"/>
+                            <constraint firstItem="T0b-ls-nZi" firstAttribute="leading" secondItem="nna-UZ-5c8" secondAttribute="leading" constant="16" id="7x6-oE-chk"/>
+                            <constraint firstItem="T0b-ls-nZi" firstAttribute="top" secondItem="pww-YL-bPw" secondAttribute="bottom" constant="8" symbolic="YES" id="PHD-Tg-OWV"/>
+                            <constraint firstItem="nna-UZ-5c8" firstAttribute="trailing" secondItem="FLA-Y8-7uT" secondAttribute="trailing" constant="16" id="RXw-E2-iHV"/>
+                            <constraint firstItem="hZt-wi-0VN" firstAttribute="top" secondItem="Jdu-xM-DJH" secondAttribute="bottom" constant="15" id="SAy-nf-Ykh"/>
                             <constraint firstItem="Jdu-xM-DJH" firstAttribute="top" secondItem="nna-UZ-5c8" secondAttribute="top" id="TuA-nr-mLc"/>
-                            <constraint firstItem="FLA-Y8-7uT" firstAttribute="leading" secondItem="nna-UZ-5c8" secondAttribute="leading" constant="16" id="VoP-RI-ygQ"/>
-                            <constraint firstItem="T0b-ls-nZi" firstAttribute="leading" secondItem="nna-UZ-5c8" secondAttribute="leading" constant="16" id="XeJ-qH-g4a"/>
-                            <constraint firstItem="nna-UZ-5c8" firstAttribute="trailing" secondItem="hZt-wi-0VN" secondAttribute="trailing" constant="16" id="aKh-Sz-56t"/>
+                            <constraint firstItem="nna-UZ-5c8" firstAttribute="trailing" secondItem="hZt-wi-0VN" secondAttribute="trailing" constant="16" id="Ywd-bo-RH4"/>
                             <constraint firstItem="nna-UZ-5c8" firstAttribute="trailing" secondItem="Jdu-xM-DJH" secondAttribute="trailing" constant="16" id="dGA-0x-dyB"/>
-                            <constraint firstItem="nna-UZ-5c8" firstAttribute="trailing" secondItem="T0b-ls-nZi" secondAttribute="trailing" constant="16" id="hUb-qU-4a2"/>
-                            <constraint firstItem="nna-UZ-5c8" firstAttribute="trailing" secondItem="pww-YL-bPw" secondAttribute="trailing" constant="16" id="hYa-nt-cob"/>
+                            <constraint firstItem="pww-YL-bPw" firstAttribute="leading" secondItem="nna-UZ-5c8" secondAttribute="leading" constant="16" id="dwx-9j-Etm"/>
+                            <constraint firstItem="b2E-Gh-trN" firstAttribute="leading" secondItem="nna-UZ-5c8" secondAttribute="leading" constant="16" id="hnq-km-yMm"/>
+                            <constraint firstItem="nna-UZ-5c8" firstAttribute="trailing" secondItem="T0b-ls-nZi" secondAttribute="trailing" constant="16" id="iIw-CK-Fgj"/>
                             <constraint firstItem="Jdu-xM-DJH" firstAttribute="leading" secondItem="nna-UZ-5c8" secondAttribute="leading" constant="16" id="l9z-za-I9n"/>
-                            <constraint firstItem="pww-YL-bPw" firstAttribute="top" secondItem="Jdu-xM-DJH" secondAttribute="bottom" constant="5" id="pVe-bg-rxB"/>
-                            <constraint firstItem="pww-YL-bPw" firstAttribute="leading" secondItem="nna-UZ-5c8" secondAttribute="leading" constant="16" id="u4e-qi-CtT"/>
+                            <constraint firstItem="FLA-Y8-7uT" firstAttribute="leading" secondItem="nna-UZ-5c8" secondAttribute="leading" constant="16" id="oem-b5-8IK"/>
+                            <constraint firstItem="nna-UZ-5c8" firstAttribute="trailing" secondItem="b2E-Gh-trN" secondAttribute="trailing" constant="16" id="sQQ-73-gGX"/>
+                            <constraint firstItem="nna-UZ-5c8" firstAttribute="bottom" secondItem="T0b-ls-nZi" secondAttribute="bottom" constant="20" id="uLL-JO-v3h"/>
+                            <constraint firstItem="FLA-Y8-7uT" firstAttribute="top" secondItem="b2E-Gh-trN" secondAttribute="bottom" constant="8" id="xDM-ac-I2T"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="fvV-kk-mTA">

@@ -14,6 +14,11 @@ class Stadiums {
     var isFetching = false
    
         func getData(completed: @escaping ()->()) {
+            guard !isFetching else {
+                return
+            }
+            isFetching = true
+            
         // Create a URL
         guard let url = URL(string: urlString) else {
             return
@@ -35,6 +40,7 @@ class Stadiums {
                 print(error)
                 print("😡 JSON ERROR: \(error.localizedDescription)")
             }
+            self.isFetching = false
             completed()
         }
         task.resume()

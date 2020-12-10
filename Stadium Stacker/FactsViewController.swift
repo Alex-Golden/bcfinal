@@ -48,7 +48,5 @@ class FactsViewController: UIViewController {
        factArray.append(factTextField.text!)
        factLabel.text = "\(factTextField.text!)"
         factTextField.text = ""
-
     }
-    
 }
